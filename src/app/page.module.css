@@ -1,0 +1,193 @@
+/* Space background with stars */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Stars */
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .stars::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent url('https://i.imgur.com/YKY28eT.png') repeat top center;
+    z-index: 1;
+    opacity: 0.4;
+  }
+  
+  .twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+    background: transparent url('https://i.imgur.com/XYMF4ca.png') repeat top center;
+    animation: move-twink-back 200s linear infinite;
+  }
+  
+  @keyframes move-twink-back {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+  }
+  
+  .center {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .maitri {
+    font-size: 20rem;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .startButton {
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #00aaff;
+    color: #fff;
+    box-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+    transition: transform 0.2s ease;
+  }
+  
+  .startButton:hover {
+    transform: scale(1.05);
+  }
+
+  .maitriPage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .visualizerWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .liveVideo {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: #111;
+    object-fit: cover;
+    z-index: 10;
+  }
+  
+  .endButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    background: #00aaff;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  
+  .endButton:hover {
+    background: #0088cc;
+  }
+
+
+.errorMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.loadingMessage {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #00ffff;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 11;
+}
+
+.conversation-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 400px;
+  height: 350px;
+  background: rgba(0, 20, 40, 0.95);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', monospace;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
+}
+  
+.subtitle {
+  font-size: 5rem;
+  color: #00aaff;
+  text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+  

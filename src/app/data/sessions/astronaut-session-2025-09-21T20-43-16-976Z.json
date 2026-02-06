@@ -1,0 +1,69 @@
+{
+  "sessionId": "session-1758487396973",
+  "startTime": "2025-09-21T20:42:13.416Z",
+  "endTime": "2025-09-21T20:43:16.973Z",
+  "messages": [
+    {
+      "id": "1758487333498",
+      "speaker": "Maitri",
+      "text": "Hello astronaut. I'm Maitri, your AI companion. Let's begin today's well-being check-in.",
+      "timestamp": "2025-09-21T20:42:13.498Z"
+    },
+    {
+      "id": "1758487342794",
+      "speaker": "Maitri",
+      "text": "How would you rate your overall well-being in microgravity? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T20:42:22.793Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 0
+      }
+    },
+    {
+      "id": "1758487373235",
+      "speaker": "Astronaut",
+      "text": "neutral",
+      "timestamp": "2025-09-21T20:42:53.235Z"
+    },
+    {
+      "id": "1758487373238",
+      "speaker": "Maitri",
+      "text": "How are you managing the physiological changes of spaceflight? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T20:42:53.237Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 1
+      }
+    }
+  ],
+  "sentimentLog": [
+    {
+      "messageId": "1758487373235",
+      "text": "neutral",
+      "timestamp": "2025-09-21T20:42:53.236Z",
+      "sentimentScore": 0.5,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 0,
+        "question": "How would you rate your overall well-being in microgravity?",
+        "response": "neutral",
+        "mappedScore": 2
+      }
+    }
+  ],
+  "overallSentiment": {
+    "averageScore": 0.5,
+    "totalMessages": 4,
+    "assessmentPhase": 1,
+    "postAssessmentPhase": 0
+  },
+  "assessmentResults": {
+    "testType": "Astronaut-WB",
+    "testName": "Astronaut Well-Being Assessment",
+    "responses": {
+      "0": 2
+    },
+    "averageScore": 2,
+    "completedAt": "2025-09-21T20:43:16.973Z"
+  }
+}

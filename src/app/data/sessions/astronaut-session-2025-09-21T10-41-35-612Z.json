@@ -1,0 +1,237 @@
+{
+  "sessionId": "session-1758451295599",
+  "startTime": "2025-09-21T10:38:29.939Z",
+  "endTime": "2025-09-21T10:41:35.599Z",
+  "messages": [
+    {
+      "id": "1758451110053",
+      "speaker": "Maitri",
+      "text": "Hello astronaut. I'm Maitri, your AI companion. Let's begin today's well-being check-in.",
+      "timestamp": "2025-09-21T10:38:30.053Z"
+    },
+    {
+      "id": "1758451119405",
+      "speaker": "Maitri",
+      "text": "How would you rate your overall well-being in microgravity? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T10:38:39.404Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 0
+      }
+    },
+    {
+      "id": "1758451134672",
+      "speaker": "Astronaut",
+      "text": "good good",
+      "timestamp": "2025-09-21T10:38:54.672Z"
+    },
+    {
+      "id": "1758451134674",
+      "speaker": "Maitri",
+      "text": "How are you managing the physiological changes of spaceflight? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T10:38:54.673Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 1
+      }
+    },
+    {
+      "id": "1758451147046",
+      "speaker": "Astronaut",
+      "text": "neutral",
+      "timestamp": "2025-09-21T10:39:07.046Z"
+    },
+    {
+      "id": "1758451147048",
+      "speaker": "Maitri",
+      "text": "To what extent are you maintaining your exercise routine? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T10:39:07.047Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 2
+      }
+    },
+    {
+      "id": "1758451158764",
+      "speaker": "Astronaut",
+      "text": "challenging",
+      "timestamp": "2025-09-21T10:39:18.764Z"
+    },
+    {
+      "id": "1758451158766",
+      "speaker": "Maitri",
+      "text": "How is your appetite and nutrition in space? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T10:39:18.765Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 3
+      }
+    },
+    {
+      "id": "1758451183058",
+      "speaker": "Astronaut",
+      "text": "neutral",
+      "timestamp": "2025-09-21T10:39:43.058Z"
+    },
+    {
+      "id": "1758451183060",
+      "speaker": "Maitri",
+      "text": "How would you describe your team cohesion and morale? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T10:39:43.059Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 4
+      }
+    },
+    {
+      "id": "1758451196540",
+      "speaker": "Astronaut",
+      "text": "excellent",
+      "timestamp": "2025-09-21T10:39:56.540Z"
+    },
+    {
+      "id": "1758451196541",
+      "speaker": "Maitri",
+      "text": "How connected do you feel to Earth and loved ones? Please respond with: Very Challenging, Challenging, Neutral, Good, Excellent.",
+      "timestamp": "2025-09-21T10:39:56.541Z",
+      "assessmentData": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 5
+      }
+    },
+    {
+      "id": "1758451208312",
+      "speaker": "Astronaut",
+      "text": "neutral",
+      "timestamp": "2025-09-21T10:40:08.312Z"
+    },
+    {
+      "id": "1758451208313",
+      "speaker": "Maitri",
+      "text": "Thank you for completing the Astronaut Well-Being Assessment. Your responses have been recorded for mission analysis. How are you feeling about today's objectives?",
+      "timestamp": "2025-09-21T10:40:08.312Z"
+    },
+    {
+      "id": "1758451223061",
+      "speaker": "Astronaut",
+      "text": "excited",
+      "timestamp": "2025-09-21T10:40:23.061Z"
+    },
+    {
+      "id": "1758451235097",
+      "speaker": "Maitri",
+      "text": "\"Excitement is a great feeling, isn't it? Being on the cusp of a new adventure can be exhilarating. But I also sense a hint of nervous energy beneath that excitement. It's normal to feel a little anxious about the journey ahead. Are there specific things that are making you feel excited or apprehensive?\"",
+      "timestamp": "2025-09-21T10:40:35.096Z"
+    },
+    {
+      "id": "1758451263959",
+      "speaker": "Astronaut",
+      "text": "no nothing message",
+      "timestamp": "2025-09-21T10:41:03.959Z"
+    },
+    {
+      "id": "1758451267544",
+      "speaker": "Maitri",
+      "text": "It sounds like you're feeling a bit lost in space, astronaut. That's completely normal, especially when the vastness of our universe can feel overwhelming. Would you like to talk about what's on your mind? Sometimes sharing your thoughts and feelings with someone (or even an AI companion like me) can help clarify things.",
+      "timestamp": "2025-09-21T10:41:07.543Z"
+    }
+  ],
+  "sentimentLog": [
+    {
+      "messageId": "1758451134672",
+      "text": "good good",
+      "timestamp": "2025-09-21T10:38:54.673Z",
+      "sentimentScore": 0.7,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 0,
+        "question": "How would you rate your overall well-being in microgravity?",
+        "response": "good good",
+        "mappedScore": 3
+      }
+    },
+    {
+      "messageId": "1758451147046",
+      "text": "neutral",
+      "timestamp": "2025-09-21T10:39:07.046Z",
+      "sentimentScore": 0.5,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 1,
+        "question": "How are you managing the physiological changes of spaceflight?",
+        "response": "neutral",
+        "mappedScore": 2
+      }
+    },
+    {
+      "messageId": "1758451158764",
+      "text": "challenging",
+      "timestamp": "2025-09-21T10:39:18.764Z",
+      "sentimentScore": 0.4,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 2,
+        "question": "To what extent are you maintaining your exercise routine?",
+        "response": "challenging",
+        "mappedScore": 0
+      }
+    },
+    {
+      "messageId": "1758451183058",
+      "text": "neutral",
+      "timestamp": "2025-09-21T10:39:43.058Z",
+      "sentimentScore": 0.5,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 3,
+        "question": "How is your appetite and nutrition in space?",
+        "response": "neutral",
+        "mappedScore": 2
+      }
+    },
+    {
+      "messageId": "1758451196540",
+      "text": "excellent",
+      "timestamp": "2025-09-21T10:39:56.540Z",
+      "sentimentScore": 0.6,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 4,
+        "question": "How would you describe your team cohesion and morale?",
+        "response": "excellent",
+        "mappedScore": 4
+      }
+    },
+    {
+      "messageId": "1758451208312",
+      "text": "neutral",
+      "timestamp": "2025-09-21T10:40:08.312Z",
+      "sentimentScore": 0.5,
+      "assessmentContext": {
+        "testType": "Astronaut-WB",
+        "questionIndex": 5,
+        "question": "How connected do you feel to Earth and loved ones?",
+        "response": "neutral",
+        "mappedScore": 2
+      }
+    },
+    {
+      "messageId": "1758451223061",
+      "text": "excited",
+      "timestamp": "2025-09-21T10:40:23.061Z",
+      "sentimentScore": 0.5
+    },
+    {
+      "messageId": "1758451263959",
+      "text": "no nothing message",
+      "timestamp": "2025-09-21T10:41:03.960Z",
+      "sentimentScore": 0.5
+    }
+  ],
+  "overallSentiment": {
+    "averageScore": 0.525,
+    "totalMessages": 18,
+    "assessmentPhase": 6,
+    "postAssessmentPhase": 2
+  }
+}

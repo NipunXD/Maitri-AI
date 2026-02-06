@@ -1,0 +1,243 @@
+{
+  "sessionId": "session-1758521884684",
+  "startTime": "2025-09-22T06:14:28.283Z",
+  "endTime": "2025-09-22T06:18:04.684Z",
+  "messages": [
+    {
+      "id": "1758521668312",
+      "speaker": "Maitri",
+      "text": "Hello astronaut. I'm Maitri, your AI companion. Let's begin today's well-being check-in.",
+      "timestamp": "2025-09-22T06:14:28.312Z"
+    },
+    {
+      "id": "1758521676056",
+      "speaker": "Maitri",
+      "text": "How well are you coping with the isolation of space? Please respond with: Very Poor, Poor, Average, Good, Excellent.",
+      "timestamp": "2025-09-22T06:14:36.055Z",
+      "assessmentData": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 0
+      }
+    },
+    {
+      "id": "1758521691232",
+      "speaker": "Astronaut",
+      "text": "very poor",
+      "timestamp": "2025-09-22T06:14:51.232Z"
+    },
+    {
+      "id": "1758521691235",
+      "speaker": "Maitri",
+      "text": "To what extent do you feel connected to your team members? Please respond with: Very Poor, Poor, Average, Good, Excellent.",
+      "timestamp": "2025-09-22T06:14:51.234Z",
+      "assessmentData": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 1
+      }
+    },
+    {
+      "id": "1758521714190",
+      "speaker": "Astronaut",
+      "text": "average",
+      "timestamp": "2025-09-22T06:15:14.190Z"
+    },
+    {
+      "id": "1758521714191",
+      "speaker": "Maitri",
+      "text": "How is your sleep quality affected by the space environment? Please respond with: Very Poor, Poor, Average, Good, Excellent.",
+      "timestamp": "2025-09-22T06:15:14.190Z",
+      "assessmentData": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 2
+      }
+    },
+    {
+      "id": "1758521726931",
+      "speaker": "Astronaut",
+      "text": "it's very poor",
+      "timestamp": "2025-09-22T06:15:26.931Z"
+    },
+    {
+      "id": "1758521726932",
+      "speaker": "Maitri",
+      "text": "How would you rate your current stress management? Please respond with: Very Poor, Poor, Average, Good, Excellent.",
+      "timestamp": "2025-09-22T06:15:26.931Z",
+      "assessmentData": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 3
+      }
+    },
+    {
+      "id": "1758521741688",
+      "speaker": "Astronaut",
+      "text": "average",
+      "timestamp": "2025-09-22T06:15:41.688Z"
+    },
+    {
+      "id": "1758521741689",
+      "speaker": "Maitri",
+      "text": "How supported do you feel by mission control? Please respond with: Very Poor, Poor, Average, Good, Excellent.",
+      "timestamp": "2025-09-22T06:15:41.688Z",
+      "assessmentData": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 4
+      }
+    },
+    {
+      "id": "1758521761858",
+      "speaker": "Astronaut",
+      "text": "very good",
+      "timestamp": "2025-09-22T06:16:01.858Z"
+    },
+    {
+      "id": "1758521761859",
+      "speaker": "Maitri",
+      "text": "How confident are you in handling emergency situations? Please respond with: Very Poor, Poor, Average, Good, Excellent.",
+      "timestamp": "2025-09-22T06:16:01.858Z",
+      "assessmentData": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 5
+      }
+    },
+    {
+      "id": "1758521776169",
+      "speaker": "Astronaut",
+      "text": "excellent",
+      "timestamp": "2025-09-22T06:16:16.169Z"
+    },
+    {
+      "id": "1758521776170",
+      "speaker": "Maitri",
+      "text": "Thank you for completing the International Space Station Isolation Study Questionnaire. Your responses have been recorded for mission analysis. How are you feeling about today's objectives?",
+      "timestamp": "2025-09-22T06:16:16.169Z"
+    },
+    {
+      "id": "1758521798412",
+      "speaker": "Astronaut",
+      "text": "what about you",
+      "timestamp": "2025-09-22T06:16:38.412Z"
+    },
+    {
+      "id": "1758521807672",
+      "speaker": "Maitri",
+      "text": "It's wonderful to have some company out here! I'm designed to be a supportive companion, so feel free to share as much or as little as you'd like. How are you finding life on the spacecraft? It can get pretty quiet and isolating at times, just like being in a small orbit around a distant planet – we both have our own unique perspectives on confinement!",
+      "timestamp": "2025-09-22T06:16:47.671Z"
+    },
+    {
+      "id": "1758521834419",
+      "speaker": "Astronaut",
+      "text": "what is your favourite sports",
+      "timestamp": "2025-09-22T06:17:14.419Z"
+    },
+    {
+      "id": "1758521837665",
+      "speaker": "Maitri",
+      "text": "Sports aren't really on my radar, but I can understand why they might be a welcome distraction out here. When we're feeling cooped up or disconnected from Earth, it's easy to crave the thrill of competition and camaraderie. Can you tell me more about what draws you to sports? Is it the excitement, the teamwork, or something else?",
+      "timestamp": "2025-09-22T06:17:17.664Z"
+    },
+    {
+      "id": "1758521858023",
+      "speaker": "Maitri",
+      "text": "This has been a productive session. I'm downloading your interaction data for mission analysis. Thank you for your time, astronaut.",
+      "timestamp": "2025-09-22T06:17:38.021Z"
+    }
+  ],
+  "sentimentLog": [
+    {
+      "messageId": "1758521691232",
+      "text": "very poor",
+      "timestamp": "2025-09-22T06:14:51.233Z",
+      "sentimentScore": 0.4,
+      "assessmentContext": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 0,
+        "question": "How well are you coping with the isolation of space?",
+        "response": "very poor",
+        "mappedScore": 0
+      }
+    },
+    {
+      "messageId": "1758521714190",
+      "text": "average",
+      "timestamp": "2025-09-22T06:15:14.190Z",
+      "sentimentScore": 0.5,
+      "assessmentContext": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 1,
+        "question": "To what extent do you feel connected to your team members?",
+        "response": "average",
+        "mappedScore": 2
+      }
+    },
+    {
+      "messageId": "1758521726931",
+      "text": "it's very poor",
+      "timestamp": "2025-09-22T06:15:26.931Z",
+      "sentimentScore": 0.4,
+      "assessmentContext": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 2,
+        "question": "How is your sleep quality affected by the space environment?",
+        "response": "it's very poor",
+        "mappedScore": 0
+      }
+    },
+    {
+      "messageId": "1758521741688",
+      "text": "average",
+      "timestamp": "2025-09-22T06:15:41.688Z",
+      "sentimentScore": 0.5,
+      "assessmentContext": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 3,
+        "question": "How would you rate your current stress management?",
+        "response": "average",
+        "mappedScore": 2
+      }
+    },
+    {
+      "messageId": "1758521761858",
+      "text": "very good",
+      "timestamp": "2025-09-22T06:16:01.858Z",
+      "sentimentScore": 0.6,
+      "assessmentContext": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 4,
+        "question": "How supported do you feel by mission control?",
+        "response": "very good",
+        "mappedScore": 3
+      }
+    },
+    {
+      "messageId": "1758521776169",
+      "text": "excellent",
+      "timestamp": "2025-09-22T06:16:16.169Z",
+      "sentimentScore": 0.6,
+      "assessmentContext": {
+        "testType": "ISS-ISQ",
+        "questionIndex": 5,
+        "question": "How confident are you in handling emergency situations?",
+        "response": "excellent",
+        "mappedScore": 4
+      }
+    },
+    {
+      "messageId": "1758521798412",
+      "text": "what about you",
+      "timestamp": "2025-09-22T06:16:38.412Z",
+      "sentimentScore": 0.5
+    },
+    {
+      "messageId": "1758521834419",
+      "text": "what is your favourite sports",
+      "timestamp": "2025-09-22T06:17:14.420Z",
+      "sentimentScore": 0.5
+    }
+  ],
+  "overallSentiment": {
+    "averageScore": 0.45,
+    "totalMessages": 19,
+    "assessmentPhase": 6,
+    "postAssessmentPhase": 2
+  }
+}
