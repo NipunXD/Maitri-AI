@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Maitri AI
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/NipunXD/Maitri-AI)
+
+Maitri AI is a sophisticated, offline-first AI companion designed to support the psychological and physical well-being of astronauts during long-duration space missions. It provides a conversational interface for mental health check-ins, psychological assessments, and emotional support, helping to mitigate the challenges of isolation and stress in space.
+
+## Key Features
+
+- **Conversational AI Companion:** Engage in empathetic, therapeutic conversations with Maitri, powered by a local LLM (Llama 3.2 via Ollama) for privacy and offline functionality.
+- **Automated Psychological Assessments:** Conducts standardized psychological evaluations through natural conversation, including NASA-TLX, POMS, and ISS-ISQ protocols.
+- **Sentiment Analysis:** Analyzes verbal responses in real-time to gauge the astronaut's emotional state and log sentiment scores for trend analysis.
+- **Facial Emotion & Identity Recognition:** Utilizes `deepface` for both facial identity verification for login and video analysis to detect dominate emotions during sessions.
+- **Interactive 3D Visualizer:** A dynamic, futuristic globe interface built with Three.js that responds to the astronaut's voice and the AI's speech, enhancing user engagement.
+- **Comprehensive Crew Dashboard:** An advanced analytics dashboard for mission control to review psychological trends, detailed session logs, assessment results, and mood distribution over time.
+- **Offline-First PWA:** Built as a Progressive Web App to ensure full functionality in environments with limited or no internet connectivity.
+- **Secure Data Logging:** All session data, including conversations, sentiment analysis, and assessment results, are saved locally as structured JSON files for mission analysis.
+
+## Architecture
+
+Maitri AI is a full-stack application built with a focus on local processing and offline capabilities.
+
+- **Frontend:** A Next.js application using React and TypeScript for the user interface.
+  - **Visualization:** `@react-three/fiber` for the interactive 3D globe.
+  - **Data Charting:** `recharts` for the analytics dashboards.
+  - **Offline Support:** `next-pwa` for Progressive Web App capabilities.
+- **Backend & AI:**
+  - **API:** Next.js API Routes handle session data management.
+  - **Conversational AI:** Integrates with a local [Ollama](https://ollama.com/) instance running Llama 3.2 for generating intelligent and empathetic responses.
+  - **Voice Processing:**
+    - **Speech-to-Text:** Uses the browser's native `webkitSpeechRecognition` API.
+    - **Text-to-Speech:** Uses the browser's native `SpeechSynthesis` API.
+  - **Emotion & Face Analysis:** Python scripts are used for computationally intensive tasks:
+    - A Flask service (`face-service.py`) provides an API for real-time face verification.
+    - A script (`analyze_emotions.py`) processes recorded video sessions to generate a frame-by-frame emotion timeline using `deepface`.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v20 or later)
+- Python (v3.8 or later)
+- [Ollama](https://ollama.com/) installed and running with the `llama3.2` model (`ollama run llama3.2`).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/nipunxd/Maitri-AI.git
+    cd Maitri-AI
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Install frontend dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3.  **Install backend dependencies:**
+    It is recommended to use a virtual environment for Python.
+    ```bash
+    # Create and activate a virtual environment (optional but recommended)
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
 
-To learn more about Next.js, take a look at the following resources:
+    # Install Python packages
+    pip install Flask opencv-python deepface numpy
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Running the Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Start the Flask face recognition service (in a separate terminal):**
+    ```bash
+    python src/app/api/face-service.py
+    ```
+    This will start the service on `http://localhost:8000`.
 
-## Deploy on Vercel
+2.  **Start the Next.js development server:**
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+
+1.  **Landing Page:** The application starts with an animated introduction.
+2.  **Dashboard:** Navigate to the `/dashboard` page. Here you can:
+    - **Log in via Face Recognition:** Use the "Start Face Recognition" feature to verify your identity using your webcam.
+    - **Manual Start:** Manually start a session or view your analytics profile.
+3.  **Maitri Session:** After logging in, you will be directed to the main interaction screen.
+    - Use the "Speak to Maitri" button to activate the microphone and talk to the AI.
+    - Respond to the psychological assessment questions.
+    - Engage in open conversation.
+4.  **End Session:** Click the "END SESSION" button. Your conversation log and assessment data will be compiled and saved as a JSON file in the `src/app/data/sessions` directory. Your recorded video session will be downloaded to your local machine.
+5.  **Crew Analytics:** Visit the `/crew-dashboard` to see a detailed visualization of all logged session data, including sentiment trends, assessment scores, and mood distribution.
