@@ -1,5 +1,4 @@
 # Maitri AI
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/NipunXD/Maitri-AI)
 
 Maitri AI is a sophisticated, offline-first AI companion designed to support the psychological and physical well-being of astronauts during long-duration space missions. It provides a conversational interface for mental health check-ins, psychological assessments, and emotional support, helping to mitigate the challenges of isolation and stress in space.
 
